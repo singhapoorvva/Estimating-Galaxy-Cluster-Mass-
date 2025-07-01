@@ -16,6 +16,38 @@ This project estimates the dynamic mass of galaxy clusters using the virial theo
 ![Screenshot (336)](https://github.com/user-attachments/assets/c7a3f68e-65f8-46f2-a357-20e067956612)
 
 
+## Formulas Used
+
+### 1. Velocity Dispersion
+
+\[
+v = c \cdot \frac{z - z_{\text{cluster}}}{1 + z_{\text{cluster}}}
+\]
+\[
+\sigma_v = \text{Standard Deviation of } v
+\]
+
+### 2. Simple Virial Mass Estimation
+
+\[
+M = \frac{3 \cdot \sigma_v^2 \cdot R}{G}
+\]
+
+### 3. Advanced Mass Estimator
+
+\[
+M = \frac{\alpha \cdot \sigma_v^2 \cdot R}{G}
+\]
+Where \(\alpha = 3\) (structure correction factor)
+
+### 4. Bootstrap Error Estimation
+
+\[
+\bar{M} = \text{Mean of Bootstrap Masses}
+\]
+\[
+\Delta M = \text{Standard Deviation of Bootstrap Masses}
+\]
 
     
 ## Requirements
